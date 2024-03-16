@@ -1,0 +1,109 @@
+.product {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 40px 0 rgba(108, 108, 108, 0.119);
+}
+
+.product__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 80px;
+    width: 80px;
+}
+
+.product__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product__title {
+    max-width: max-content;
+    font-weight: 500;
+}
+
+.product__title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.product__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Количество строк для отображения */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.product__price {
+    font-weight: 500;
+}
+
+.product__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product__actions-button,
+.product__actions-input {
+    width: 24px;
+}
+
+.product__actions-input {
+    outline: none;
+    padding: 3px 0;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+.product__actions-input::-webkit-outer-spin-button,
+.product__actions-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product__actions-button {
+    height: 24px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.product__actions-button--increment:hover:not(:disabled),
+.product__actions-button--decrement:hover:not(:disabled) {
+    border-color: #0077ff;
+    background-color: #0077ff;
+    color: #fff;
+}
+
+.product__actions-button--increment:disabled,
+.product__actions-button--decrement:disabled {
+    background-color: #e3e3e3;
+}
+
+.product__actions-button--increase:active,
+.product__actions-button--decrease:active {
+    border-color: #3292ff;
+    background-color: #3292ff;
+    color: #fff;
+}
+
+.product__actions-button--delete {
+    padding: 4px;
+    border: none;
+    opacity: 0.5;
+}
+
+.product__actions-button--delete:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

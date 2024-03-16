@@ -1,0 +1,28 @@
+.receipt {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.receipt__header {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.receipt__quantity {
+    text-align: center;
+}
+
+.receipt__items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+}

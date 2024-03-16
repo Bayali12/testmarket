@@ -1,0 +1,19 @@
+.receiptItem {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.receiptItem__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.receiptItem__quantity {
+    text-align: center;
+}
